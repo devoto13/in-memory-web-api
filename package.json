@@ -13,8 +13,7 @@
     "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "test": "karma start karma.conf.js",
     "build-and-test": "concurrently  \"npm run tsc\" \"npm run test\"",
-    "http-server": "tsc && http-server",
-    "typings": "typings"
+    "http-server": "tsc && http-server"
   },
   "repository": {
     "type": "git",
@@ -47,8 +46,7 @@
     "concurrently": "^2.1.0",
     "core-js": "^2.4.0",
     "lite-server": "^2.2.0",
-    "typescript": "^1.8.10",
-    "typings": "^1.2.0",
+    "typescript": "^2.0.0",
 
     "canonical-path": "0.0.2",
     "http-server": "^0.9.0",
@@ -68,6 +66,10 @@
     "gulp-task-listing": "^1.0.1",
     "gulp-util": "^3.0.7",
 
-    "yargs": "^4.7.1"
+    "yargs": "^4.7.1",
+    
+    "@types/core-js": "^0.9.27-alpha",
+    "@types/jasmine": "^2.2.28-alpha",
+    "@types/node": "^4.0.28-alpha"
   }
 }

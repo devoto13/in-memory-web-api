@@ -4,6 +4,4 @@ gulpfile.js
 .npmignore
 tsconfig.json
 tslint.json
-typings
-typings.json
 .editorconfig
