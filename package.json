@@ -1,6 +1,6 @@
 {
   "name": "@devoto13/angular2-in-memory-web-api",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "An in-memory web api for demos and tests",
   "main":"in-memory-web-api/index.js",
   "jsnext:main": "esm/index.js",

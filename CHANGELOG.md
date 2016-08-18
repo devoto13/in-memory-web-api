@@ -1,3 +1,8 @@
+<a name="0.0.18"></a>
+# 0.0.18 (2016-08-18)
+* Simplified build process
+* Refixed source maps
+
 <a name="0.0.17"></a>
 # 0.0.17 (2016-08-18)
 * Migrated to TypeScript 2.0
