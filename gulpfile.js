@@ -86,7 +86,7 @@ function log(msg) {
 function runTSC(directory, done) {
     directory = directory || './';
     var tscjs = path.join(process.cwd(), 'node_modules/typescript/bin/tsc');
-    var childProcess = cp.spawn('node', [tscjs, '-p', directory], { cwd: process.cwd() });
+    var childProcess = cp.spawn('node', [tscjs], { cwd: process.cwd() });
     childProcess.stdout.on('data', function (data) {
         console.log(data.toString());
     });
