@@ -1,3 +1,8 @@
+<a name="0.0.17"></a>
+# 0.0.17 (2016-08-18)
+* Migrated to TypeScript 2.0
+* Fixed missing source maps
+
 <a name="0.0.16"></a>
 # 0.0.16 (2016-08-18)
 * Switched to scoped package
