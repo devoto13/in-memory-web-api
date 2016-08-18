@@ -1,5 +1,5 @@
 {
-  "name": "angular2-in-memory-web-api",
+  "name": "@devoto13/angular2-in-memory-web-api",
   "version": "0.0.15",
   "description": "An in-memory web api for demos and tests",
   "main":"index.js",
@@ -18,15 +18,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angular/in-memory-web-api.git"
+    "url": "git+https://github.com/devoto13/in-memory-web-api.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/angular/in-memory-web-api/issues"
+    "url": "https://github.com/devoto13/in-memory-web-api/issues"
   },
-  "homepage": "https://github.com/angular/in-memory-web-api#readme",
+  "homepage": "https://github.com/devoto13/in-memory-web-api#readme",
   "peerDependencies": {
     "@angular/core": "2.0.0-rc.5",
     "@angular/http": "2.0.0-rc.5",
