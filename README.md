@@ -29,29 +29,23 @@ Neglecting to synchronize Angular 2 versions
 triggers typescript definition duplication error messages when
 compiling your application project.
 
-- `gulp bump` - up the package version number
-
-- update `CHANGELOG.MD` to record the change
-
 - update the dependent version(s) in `package.json`
 
 - `npm install` the new package(s) (make sure they really do install!)<br>
    `npm list --depth=0`
 
-- consider updating typings, install individually/several:
-  `npm install @types/{core-js,jasmine,node} --save-dev`
-
-- `npm run tsc` to confirm the project compiles w/o error (sanity check)
-
  -- NO TESTS YET ... BAD --
 
 - `gulp build`
-- commit and push
+
+- `gulp bump`
+
+- update `CHANGELOG.MD` to record the change
+
+- commit
+
+- add version tag
+
+- push
 
 - `npm publish`
-
-- Fix and validate angular.io docs samples
-
-- Add two tags to the release commit with for npmcdn
-  - the version number
-  - 'latest'
