@@ -1,6 +1,8 @@
 # angular2 in-memory-web-api
 An in-memory web api for Angular 2 demos and tests.
 
+**NOTE** This version contains PRs not merged into main repo for ages, build process cleanups and some tweaks for my own needs.
+
 See usage in the Angular.io
 [Server Communication](https://angular.io/docs/ts/latest/guide/server-communication.html) chapter.
 
@@ -15,37 +17,26 @@ In the following example we are matching on all names containing the letter 'j' 
 `/app/heroes/?name=j+`
 
 # To Do
+
 * add  documentation
 * add tests (shameful omission!)
 
 # Build Instructions
 
-Mostly gulp driven.
+The following describes steps for building and publishing package:
 
-The following describes steps for updating from one Angular version to the next
+- make and commit changes
 
->This is essential even when there are no changes of real consequence.
-Neglecting to synchronize Angular 2 versions
-triggers typescript definition duplication error messages when
-compiling your application project.
+- `npm run build`
 
-- update the dependent version(s) in `package.json`
+- bump version in `package.json`
 
-- `npm install` the new package(s) (make sure they really do install!)<br>
-   `npm list --depth=0`
+- update `CHANGELOG.md` with changes
 
- -- NO TESTS YET ... BAD --
+- `git add . && git commit -m 'Bumped version'`
 
-- `gulp build`
+- `git tag <version>`
 
-- `gulp bump`
+- `git push && git push --tags`
 
-- update `CHANGELOG.MD` to record the change
-
-- commit
-
-- add version tag
-
-- push
-
-- `npm publish`
+- `npm publish --access=public`
