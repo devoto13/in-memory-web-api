@@ -1,3 +1,7 @@
+<a name="0.0.20"></a>
+# 0.0.20 (2016-08-18)
+* Added missing `types` property to `package.json`
+
 <a name="0.0.19"></a>
 # 0.0.19 (2016-08-18)
 * Refixed source maps
