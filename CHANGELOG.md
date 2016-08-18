@@ -1,3 +1,7 @@
+<a name="0.0.16"></a>
+# 0.0.16 (2016-08-18)
+* Switched to scoped package
+
 <a name="0.0.15"></a>
 # 0.0.15 (2016-08-09)
 * RC5
