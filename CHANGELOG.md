@@ -1,3 +1,8 @@
+<a name="0.0.21"></a>
+# 0.0.21 (2016-08-18)
+* Configured Karma tests
+* Added persisting data to `localStorage`
+
 <a name="0.0.20"></a>
 # 0.0.20 (2016-08-18)
 * Added missing `types` property to `package.json`

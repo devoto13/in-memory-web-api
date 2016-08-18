@@ -1,6 +1,6 @@
 {
   "name": "@devoto13/angular2-in-memory-web-api",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "An in-memory web api for demos and tests",
   "main":"in-memory-web-api/index.js",
   "types":"in-memory-web-api/index.d.ts",

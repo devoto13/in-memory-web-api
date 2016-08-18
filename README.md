@@ -1,7 +1,7 @@
 # angular2 in-memory-web-api
 An in-memory web api for Angular 2 demos and tests.
 
-**NOTE** This version contains PRs not merged into main repo for ages, build process cleanups and some tweaks for my own needs.
+**NOTE** This version contains PRs not merged into main repo for ages, build process cleanups and storing data into `localStorage`, so it persists after page reload.
 
 See usage in the Angular.io
 [Server Communication](https://angular.io/docs/ts/latest/guide/server-communication.html) chapter.
