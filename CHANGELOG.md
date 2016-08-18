@@ -1,3 +1,7 @@
+<a name="0.0.19"></a>
+# 0.0.19 (2016-08-18)
+* Refixed source maps
+
 <a name="0.0.18"></a>
 # 0.0.18 (2016-08-18)
 * Simplified build process
