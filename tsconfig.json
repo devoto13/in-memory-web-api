@@ -14,8 +14,6 @@
   },
   "exclude": [
     "node_modules",
-    "in-memory-web-api",
-    "typings/main",
-    "typings/main.d.ts"
+    "in-memory-web-api"
   ]
 }
