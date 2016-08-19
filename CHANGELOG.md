@@ -1,3 +1,8 @@
+<a name="0.0.22"></a>
+# 0.0.22 (2016-08-19)
+* Fixed types for WebStorm  
+* Removed persisting data to `localStorage`
+
 <a name="0.0.21"></a>
 # 0.0.21 (2016-08-18)
 * Configured Karma tests
