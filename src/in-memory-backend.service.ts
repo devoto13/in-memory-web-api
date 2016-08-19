@@ -118,7 +118,6 @@ export const isSuccess = (status: number): boolean => (status >= 200 && status <
  */
 
 export class InMemoryBackendService {
-  private readonly DB_KEY = 'angular2-in-memory-db';
 
   protected config: InMemoryBackendConfigArgs = new InMemoryBackendConfig();
   protected db: {};
@@ -126,12 +125,7 @@ export class InMemoryBackendService {
   constructor(
     @Inject(SEED_DATA) private seedData: InMemoryDbService,
     @Inject(InMemoryBackendConfig) @Optional() config: InMemoryBackendConfigArgs) {
-
-    if (localStorage.getItem(this.DB_KEY)) {
-      this.loadDb();
-    } else {
-      this.resetDb();
-    }
+    this.resetDb();
 
     let loc = this.getLocation('./');
     this.config.host = loc.host;
@@ -203,15 +197,12 @@ export class InMemoryBackendService {
             break;
           case RequestMethod.Post:
             options = this.post(reqInfo);
-            this.persist();
             break;
           case RequestMethod.Put:
             options = this.put(reqInfo);
-            this.persist();
             break;
           case RequestMethod.Delete:
             options = this.delete(reqInfo);
-            this.persist();
             break;
           default:
             options = this.createErrorResponse(STATUS.METHOD_NOT_ALLOWED, 'Method not allowed');
@@ -472,11 +463,6 @@ export class InMemoryBackendService {
    */
   protected resetDb() {
     this.db = this.seedData.createDb();
-    this.persist();
-  }
-
-  protected loadDb() {
-    this.db = JSON.parse(localStorage.getItem(this.DB_KEY));
   }
 
   protected setStatusText(options: ResponseOptions) {
@@ -490,9 +476,5 @@ export class InMemoryBackendService {
         statusText: 'Invalid Server Operation'
       });
     }
-  }
-
-  protected persist() {
-    localStorage.setItem(this.DB_KEY, JSON.stringify(this.db));
   }
 }
